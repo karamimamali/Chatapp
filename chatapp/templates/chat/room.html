@@ -1,0 +1,28 @@
+{% extends "chat/layout.html" %}
+{% load static %}
+
+{% block head %}
+    <script type="text/javascript" src="{% static 'js/room.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/reconnecting_websocket.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/room.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="container-wrapper">
+        <div class="l-container">
+            <div id="user-container">
+    
+            </div>
+            <input id="create-group-submit" type="button" value="Create Group">
+        </div>
+        <div class="r-container">
+            <div id="message-container">
+                
+            </div>
+            <input id="chat-message-input" type="text" size="100">
+            <input id="chat-message-submit" type="button" value="Send">
+            {{ room_name|json_script:"room_name" }}
+            {{ username|json_script:"username"}}
+        </div>
+    </div>
+{% endblock %}

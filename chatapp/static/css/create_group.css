@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f8f0; /* light green background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+p {
+    color: #008000; /* green text color */
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #008000; /* green border */
+    border-radius: 5px;
+}
+
+#room-name-submit {
+    background-color: #008000; /* green button background */
+    color: #ffffff; /* white text color */
+    cursor: pointer;
+}
+
+#room-name-submit:hover {
+    background-color: #006400; /* darker green on hover */
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #008000; /* green background color */
+    color: #ffffff; /* white text color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+.nav-links {
+    font-size: 1.5em;
+    display: flex;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.app-container {
+    margin-top: 70px; /* Adjust according to the height of your fixed navbar */
+    padding: 20px;
+}
