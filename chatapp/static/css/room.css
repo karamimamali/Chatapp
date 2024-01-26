@@ -97,16 +97,6 @@ body {
     overflow-x: hidden;
 }
 
-.username {
-    margin: 5px 0;
-    padding: 8px;
-    max-width: fit-content;
-    border: 1px solid #008000;
-    border-radius: 5px;
-    background-color: #f0f8f0; 
-    overflow-wrap: break-word;
-    overflow-x: hidden;
-}
 
 /* Navbar */
 

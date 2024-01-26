@@ -45,15 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     function appendMessage(username,message) {
-
-        const usernameDiv = document.createElement('div');
-        usernameDiv.className = 'username';
-        usernameDiv.textContent = userName;
-        messageContainer.appendChild(usernameDiv);
-
         const messageDiv = document.createElement('div');
         messageDiv.className = 'message';
-        messageDiv.textContent = message;
+        messageDiv.textContent = username+ ": " + message;
         messageContainer.appendChild(messageDiv);
 
 
