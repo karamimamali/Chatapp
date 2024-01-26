@@ -6,5 +6,4 @@ User = get_user_model()
 
 
 def create_user(request):
-    
     pass

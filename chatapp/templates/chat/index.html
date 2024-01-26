@@ -1,11 +1,17 @@
 {% extends "chat/layout.html" %}
+{% load static %}
 
 {% block head %}
-
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 {% endblock %}
 
 {% block body %}
-<H1>Welcome to Chat app</H1>
-<input id="create-group-submit" type="button" value="Create a chat">
-<input id="join-group-submit" type="button" value="Join a Chat">
+    <div class="container">
+        <h1>Welcome to Chat app</h1>
+        <div class="buttons-container">
+            <button id="create-group-submit">Create a Chat</button>
+            <button id="join-group-submit">Join a Chat</button>
+        </div>
+    </div>
 {% endblock %}
