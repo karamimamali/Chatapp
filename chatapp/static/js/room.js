@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const messageDiv = document.createElement('div');
         messageDiv.className = 'message';
-        messageDiv.textContent = message;
+        messageDiv.textContent = username + ": " + message;
         messageContainer.appendChild(messageDiv);
 
 
