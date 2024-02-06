@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => {
             if (response.redirected) {
-                // Manually reload the page if redirection is detected
+                
                 window.location.href = response.url;
             } else {
                 return response.json();
