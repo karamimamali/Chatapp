@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f8f0; /* light green background */
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    margin-top: 180px;
+    margin-left: 40px;
+}

@@ -1,9 +1,13 @@
 {% extends "chat/layout.html" %}
+{% load static %}
 
 {% block head %}
-
+    <script type="text/javascript" src="{% static 'js/about.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
 {% endblock %}
 
 {% block body %}
-<a target="_blank" href="https://icons8.com/icon/108633/done">Done</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<div class="container">
+    <a target="_blank" href="https://icons8.com/icon/108633/done">Done</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
 {% endblock %}

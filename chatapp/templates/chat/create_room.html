@@ -1,0 +1,20 @@
+{% extends "chat/layout.html" %}
+{% load static %}
+
+
+{% block head %}
+    <script type="text/javascript" src="{% static 'js/create_room.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/create_room.css' %}">
+{% endblock  %}
+
+
+{% block body %}
+    <p>Create a Chat room, Type the name: </p>
+    <form action="">
+        {% csrf_token %}
+        <input id="room-name-input" type="text" size="50"><br>
+        <input id="room-password-input" type="password" size="50"><br>
+        <input id="room-create-submit" type="button" value="Enter">
+    </form>
+    
+{% endblock %}
