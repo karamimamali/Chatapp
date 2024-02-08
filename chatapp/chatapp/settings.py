@@ -91,6 +91,9 @@ USE_TZ = True
 
 import os
 
+LOGIN_URL = '/user/login/'  
+
+
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = [

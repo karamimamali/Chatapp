@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f8f0; /* light green background */
+    background-color: #f0f8f0; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,8 +9,8 @@ body {
 
 .container-wrapper {
     display: flex;
-    width: 80%; /* Adjust as needed */
-    margin: 0 auto; /* Center the containers within the body */
+    width: 80%; 
+    margin: 0 auto; 
     margin-top: 50px;
 }
 
@@ -28,7 +28,7 @@ body {
 #message-container {
     max-height: 500px; 
     min-height: 500px;
-    overflow-y: auto; /* Enable vertical scrollbar if needed */
+    overflow-y: auto; 
     padding: 10px;
     border: 3px solid #008000;
     border-radius: 5px;
@@ -39,7 +39,7 @@ body {
 #user-container {
     max-height: 500px; 
     min-height: 500px;
-    overflow-y: auto; /* Enable vertical scrollbar if needed */
+    overflow-y: auto;
     padding: 10px;
     border: 3px solid #008000;
     border-radius: 5px;
@@ -47,43 +47,32 @@ body {
     text-align: left;
 }
 
-#room-name-container {
-    max-height: fit-content;
-    max-width: fit-content;
-    padding: 10px;
-    border: 1px solid #008000;
-    border-radius: 5px;
-    background-color: #8fed83;
-    margin-left: auto;
-    margin-bottom: 10px;
-}
-
 #chat-message-input {
     padding: 10px;
     margin: 5px;
     width: 300px;
-    border: 1px solid #008000; /* green border */
+    border: 1px solid #008000; 
     border-radius: 5px;
 }
 
 #chat-message-submit {
-    background-color: #008000; /* green button background */
-    color: #ffffff; /* white text color */
+    background-color: #008000; 
+    color: #ffffff; 
     padding: 10px;
     margin: 5px;
     cursor: pointer;
 }
 
 #create-group-submit {
-    background-color: #008000; /* green button background */
-    color: #ffffff; /* white text color */
+    background-color: #008000; 
+    color: #ffffff; 
     padding: 10px;
     margin: 5px;
     cursor: pointer;    
 }
 
 #chat-message-submit:hover {
-    background-color: #006400; /* darker green on hover */
+    background-color: #006400; 
 }
 
 .message {
@@ -97,3 +86,17 @@ body {
     overflow-x: hidden;
 }
 
+#room-name-container {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.room-name-content {
+    padding: 1px;
+}
+
+#room-name {
+    color: #008000;
+    font-size: 1.4em;
+    margin: 0;
+}

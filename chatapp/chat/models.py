@@ -17,7 +17,7 @@ class Message(models.Model):
 
 class ChatGroup(models.Model):
     users = models.ManyToManyField(User)
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=20, unique=True)
     password = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):

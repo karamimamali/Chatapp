@@ -44,7 +44,21 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 return response.json().then(errorData => {
                     console.error('Error:', errorData.error);
-                    alert('Please choose a different room name.');
+
+                    
+                    if (errorData.error) {
+                        
+                        if (errorData.error.roomName) {
+                            alert(errorData.error.roomName);
+                        }
+                        if (errorData.error.roomPassword) {
+                            alert(errorData.error.roomPassword);
+                        }
+                    } else {
+                    
+                        alert('An error occurred. Please try again.');
+                    }
+
                     throw new Error('Request failed');
                 });
             }
@@ -58,4 +72,3 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error:', error));
     });
 });
-

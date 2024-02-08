@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const joinGroupButton = document.getElementById("join-group-submit");
 
     createGroupButton.addEventListener("click", function () {
-        window.location.href = "/chat/create_room"; // Replace with your desired URL
+        window.location.href = "/chat/create_room"; 
     });
 
     joinGroupButton.addEventListener("click", function () {
-        window.location.href = "/chat/join"; // Replace with your desired URL
+        window.location.href = "/chat/join_room";
     });
 });

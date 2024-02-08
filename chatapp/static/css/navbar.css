@@ -1,8 +1,6 @@
-/* Navbar */
-
 .navbar {
-    background-color: #008000; /* green background color */
-    color: #ffffff; /* white text color */
+    background-color: #008000; 
+    color: #ffffff; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +29,6 @@
 }
 
 .app-container {
-    margin-top: 70px; /* Adjust according to the height of your fixed navbar */
+    margin-top: 70px; 
     padding: 20px;
 }
